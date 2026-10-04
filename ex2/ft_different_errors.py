@@ -7,7 +7,7 @@ def garden_operations(operation_number: int) -> None:
         open('/non/existent/file')
     elif operation_number == 3:
         "texto" + 5
-    elif operation_number == 4:
+    else operation_number == 4:
         print("Operation completed successfully")
 
 
@@ -35,6 +35,11 @@ def test_error_types() -> None:
         print(f"Caught TypeError: {e}")
     print("Testing operation 4...")
     garden_operations(4)
+    try:
+        garden_operations(0)
+        garden_operations(1)
+    except (ValueError, ZeroDivisionError) as e:
+        print(f"Caught: {e}")
     print()
     print("All error types tested successfully!")
 
