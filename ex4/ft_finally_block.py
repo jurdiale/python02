@@ -22,7 +22,7 @@ def test_watering_system() -> None:
         print(".. ending tests and returning to main")
         return
     finally:
-        print('Closing watering system')
+        print("Closing watering system")
     print()
     print("Testing invalid plants...")
     print("Opening watering system")
