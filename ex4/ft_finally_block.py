@@ -1,4 +1,9 @@
-class PlantError(Exception):
+class GardenError(Exception):
+    def __init__(self, message: str = "Unknown garden error") -> None:
+        super().__init__(message)
+
+
+class PlantError(GardenError):
     def __init__(self, message: str = "Unknown plant error") -> None:
         super().__init__(message)
 
@@ -35,7 +40,7 @@ def test_watering_system() -> None:
         print(".. ending tests and returning to main")
         return
     finally:
-        print('Closing watering system')
+        print("Closing watering system")
 
 
 if __name__ == '__main__':
