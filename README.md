@@ -15,7 +15,6 @@ Los cinco ejercicios del repositorio (último commit `c79935b`, 4 de noviembre d
 | ex4 | `ex4/ft_finally_block.py` | Sí | Limpio | Limpio |
 
 - El error de mypy en ex2 es el de la línea `"texto" + 5`. Es intencionado: el subject pide dejarlo para provocar el `TypeError`.
-- La versión anterior de ex2 tenía `else operation_number == 4:`, que es un error de sintaxis. El último commit lo corrige con `else:`.
 - Los nombres de carpetas y archivos coinciden con los que pide el subject.
 
 ## Qué hace el programa
